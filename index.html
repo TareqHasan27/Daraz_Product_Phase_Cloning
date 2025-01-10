@@ -19,16 +19,17 @@
 </head>
 
 <body>
-        <!-- header section -->
+    <!-- header section -->
     <header>
         <nav>
             <div class="bg bg-orange-700">
-                    <!-- nav header content -->
-                    <div id="menuToggle" class="flex justify-end p-4 m-0">
-                        <i class="fa-solid fa-bars md:hidden text-xl"></i>
-                    </div>
-                    <div id="navMenu" class="hidden md:block md:items-center ">
-                    <ul class="flex flex-col md:flex-row gap-y-2 items-end md:justify-end absolute right-0 p-4 md:static rounded-lg bg-orange-700">
+                <!-- nav header content -->
+                <div id="menuToggle" class="flex justify-end p-4 m-0">
+                    <i class="fa-solid fa-bars md:hidden text-xl"></i>
+                </div>
+                <div id="navMenu" class="hidden md:block md:items-center ">
+                    <ul
+                        class="flex flex-col md:flex-row gap-y-2 items-end md:justify-end absolute right-0 p-4 md:static rounded-lg bg-orange-700">
                         <li>
                             <a class="p-4 text-lg text-cyan-50" href="">Save More on App</a>
                         </li>
@@ -50,24 +51,24 @@
                     </ul>
                 </div>
 
-                    <!-- logo bar and search -->
+                <!-- logo bar and search -->
 
                 <div class="flex justify-between items-center mt-3">
-                        <!-- logo -->
+                    <!-- logo -->
                     <div class="border-solid border-6">
                         <img class="w-24" src="images/Darazlogo.png" alt="">
                     </div>
-                        <!-- search layout -->
+                    <!-- search layout -->
                     <div class="w-[70%] border border-6 bg-white flex justify-between items-center">
                         <!-- search -->
                         <input class=" h-full p-3 w-full" type="text" placeholder="Search in daraz">
                         <!-- search icon -->
                         <i class="fa-solid fa-magnifying-glass p-3 hover:text-orange-500"></i>
                     </div>
-                        <!-- cart icon -->
-                        <i class="fa-solid fa-cart-shopping text-2xl p-4"></i>
+                    <!-- cart icon -->
+                    <i class="fa-solid fa-cart-shopping text-2xl p-4"></i>
                 </div>
-                
+
                 <div class=" ">
                     <ul class="flex m-0 justify-center">
                         <li class="p-2 text-base  text-cyan-50">mistry box daraz today</li>
@@ -83,17 +84,216 @@
         <div class="flex font-medium text-indigo-900">
             <p class="text-2xl m-4 "> Categories
                 <i class="fa-solid fa-chevron-down hover:text-gray-400"></i>
-            </p>           
+            </p>
         </div>
     </header>
 
     <main>
+        <div class="flex ">
+            <!-- filtering section -->
+            <div>
+                <div class="mx-4">
+                    <h2>Brand</h2>
+                    <ul class="text-sm">
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">intel</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Iphone</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Xiaomi</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Walton</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">OnePlus</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Samsung</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-4 mt-4">
+                    <h2>Service & Promotion</h2>
+                    <ul class="text-sm">
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Mall</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Flash sale</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Free delivery</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Best price Guaranteed</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-4 mt-4">
+                    <h2>Shipped from</h2>
+                    <ul class="text-sm">
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Chattogram</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Dhaka</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Sylhet</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Rajshahi</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Rangpur</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Barishal</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Overseas</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Mymensingh</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-4 mt-4">
+                    <h3>Price</h3>
+                    <div class="flex items-center">
+                        <input class="w-[20%] h-[20%] p-2" type="text" placeholder="min">
+                        <p class="items-center text-2xl"> - </p>
+                        <input class="w-[20%] h-[20%] p-2" type="text" placeholder="max">
+                        <button class="bg-orange-500 rounded-sm m-2 w-[10%] h-[20%]"><i
+                                class="fa-solid fa-angle-right text-3xl "></i></button>
+                    </div>
+                </div>
+                <div class="mx-4 mt-4"> 
+                    <h3>Rating</h3>
+                    <div class="rating mt-3">
+                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="1" />
+                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="2" />
+                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="3" />
+                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="4" />
+                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" value="5" checked="checked" />
+                    </div>
+                </div>
+                <div class="mx-4 mt-4">
+                    <h2>Color Family</h2>
+                    <ul class="text-sm">
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Black</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">White</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Off-white</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Silver</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Orange</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Blue</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-4 mt-4">
+                    <h2>Waranty Type</h2>
+                    <ul class="text-sm">
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Brand Waranty</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">No Waranty</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Seller Waranty</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">Non-locar Waranty</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-4 mt-4">
+                    <h2>Waranty Peripd</h2>
+                    <ul class="text-sm">
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">1 Year</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">2 Year</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">3 Year/label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">6 Months</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">3 Months</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">1 Months</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">8 Months</label>
+                        </li>
+                    </ul>
+                </div>
 
+            </div>
+
+        </div>
+        <!-- product section -->
+        <div>
+        </div>
     </main>
     <footer>
 
     </footer>
-<script src="script/nav.js"></script>
+    <script src="script/nav.js"></script>
 </body>
 
 </html>
