@@ -29,7 +29,7 @@
                 </div>
                 <div id="navMenu" class="hidden md:block md:items-center ">
                     <ul
-                        class="flex flex-col md:flex-row gap-y-2 items-end md:justify-end absolute right-0 p-4 md:static rounded-lg bg-orange-700">
+                        class="flex flex-col md:flex-row gap-y-2 items-end md:justify-end absolute right-0 p-4 md:static rounded-lg bg-orange-700 ">
                         <li>
                             <a class="p-4 text-lg text-cyan-50" href="">Save More on App</a>
                         </li>
@@ -89,9 +89,12 @@
     </header>
 
     <main>
-        <div class="flex ">
+        <div class="flex justify-evenly">
             <!-- filtering section -->
-            <div>
+             <div id="filterToggle" class="flex justify-end p-4 m-0 relative z-20 md:hidden">
+                <i class="fa-solid fa-filter text-2xl"></i>
+             </div>
+            <div id="filterMenu" class="hidden md:block lg:items-center mx-0  flex-row gap-y-2 items-end lg:justify-end left-0 mb-10  p-4 absolute z-10 lg:static rounded-lg bg-white w-1/2 md:w-1/3 lg:w-1/4 ">
                 <div class="mx-4">
                     <h2>Brand</h2>
                     <ul class="text-sm">
@@ -189,14 +192,15 @@
                                 class="fa-solid fa-angle-right text-3xl "></i></button>
                     </div>
                 </div>
-                <div class="mx-4 mt-4"> 
+                <div class="mx-4 mt-4">
                     <h3>Rating</h3>
                     <div class="rating mt-3">
                         <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="1" />
                         <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="2" />
                         <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="3" />
                         <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 disabled" value="4" />
-                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" value="5" checked="checked" />
+                        <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" value="5"
+                            checked="checked" />
                     </div>
                 </div>
                 <div class="mx-4 mt-4">
@@ -284,16 +288,286 @@
                 </div>
 
             </div>
-
-        </div>
-        <!-- product section -->
-        <div>
+            <!-- product section -->
+            <div class="">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 p-4 justify-evenly items-center">
+                <div class="card card-compact bg-base-100 w-96 shadow-xl bg-white">
+                    <figure class="w-96 h-96">
+                    <img src="images/HeadPhone.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">HeadPhone</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 2000</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Khulna</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure class="w-96 h-96">
+                    <img src="images/Macbook.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Macbook</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 200000</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">666 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="1"  />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="3" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Dhaka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure>
+                    <img src="images/Power-bank.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Powerbank</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 4500</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1000 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Dhaka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure class="w-96 h-96">
+                    <img src="images/Sportswater-cup.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Sportswater-cup</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 500</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Khulna</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure class="w-96 h-96">
+                    <img src="images/T-shirt.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">T-shirt</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 200</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Chittagong</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure class="w-96 h-96">
+                    <img src="images/Tote-bag.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Side Bag</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 2000</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Khulna</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure>
+                    <img src="images/Perfume.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Perfume</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 1000</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Sylhet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure class="w-96 h-96">
+                    <img src="images/Skincare.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Lotion</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 2500</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Rajshahi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                    <figure class="w-96 h-96">
+                    <img src="images/Fullgrocery.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Grocery</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quam!</p>
+                        <p class="text-2xl font-bold text-orange-400 ">৳ 1500</p>
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <div class="rating mt-3">
+                                    <p class="text-xl mr-2">1020 sold</p>
+                                    <div>
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4" value="1" checked="checked" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="2" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="3" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="4" />
+                                    <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400 w-4 disabled" value="5" />
+                                    </div>    
+                                </div>
+                                <div>
+                                    <p class="text-sm">Mymensingh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer text-xl grid grid-cols-1 md:grid-cols-2 justify-center md:justify-between p-10 text-indigo-900 bg-white-700 ">
+            <nav>
+              <h6 class="footer-title">Customer Care</h6>
+              <a class="link link-hover">Help Center</a>
+              <a class="link link-hover">How to Buy</a>
+              <a class="link link-hover">Return & Refunds</a>
+              <a class="link link-hover">Terms & Conditions</a>
+              <a class="link link-hover">CCCMS</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Daraz</h6>
+              <a class="link link-hover">About Daraz</a>
+              <a class="link link-hover">Digital Payment</a>
+              <a class="link link-hover">Daraz Card</a>
+              <a class="link link-hover">Daraz Cares</a>
+              <a class="link link-hover">Daraz Blog</a>
+              <a class="link link-hover">Daraz App</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Terms of use</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>  
+                                  
     </footer>
     <script src="script/nav.js"></script>
+    <script src="script/filter.js"></script>
 </body>
 
 </html>
